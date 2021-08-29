@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(51, 51, 51);
+}
+
+
+li{
+   list-style: none;
+   display: block;
+   margin: 0.5rem 1rem;
+   font-weight: 500;
+   font-size: 1.2rem;  
+}
+a{
+    text-decoration: none; 
+}
+
+
+
+
+header, ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+header a{
+    color: white;
+}
+
+.header{
+    background-color: rgba(52, 52, 194, 0.918);
+    padding: 1.3rem 2rem;
+    border-radius: 0 0 0 1rem;
+   
+}
+
+.active-page{
+  font-weight: 700;
+}
+
+
+.header-name{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bolder;
+}
+ 
+main > h1{
+    text-align: center;
+    margin: 5rem;
+    font-size: 2.2rem;
+}
+
+
+main > div{
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    width: 35%;
+}
+
+
+
+
+
+
+
+
+
+

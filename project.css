@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(51, 51, 51);
+}
+
+:root{
+    --primary--color: rgba(52, 52, 194, 0.918);
+}
+
+li{
+   list-style: none;
+   display: block;
+   margin: 0.5rem 1rem;
+   font-weight: 500;
+   font-size: 1.2rem;  
+}
+a{
+    text-decoration: none; 
+}
+
+
+
+
+header, ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+header a{
+    color: white;
+}
+
+.header{
+    background-color:var(--primary--color);
+    padding: 1.3rem 2rem;
+    border-radius: 0 0 0 1rem;
+   
+}
+
+.active-page{
+  font-weight: 700;
+}
+
+
+.header-name{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bolder;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main > h1{
+    text-align: center;
+    margin: 5rem;
+    font-size: 2.2rem;
+}
+
+span {
+    color: var(--primary--color);
+}
+
+
+.project-box{
+    /* background-color: rgb(116, 116, 37); */
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0rem;
+}
+
+.assignment{
+    width: 35%;
+    
+}
+
+.assignment> h2{
+    font-size: 1.7rem;
+    /* margin: 0.8rem; */
+}
+
+/* .assignment>p:first-of-type{
+    font-size: 0.9rem;
+    padding: 0.5rem 0rem;
+    color: rgb(96, 97, 96);
+} */
+
+.assignment>p:last-of-type{
+    font-size: 1.1rem;
+}
+
+.assignment-btn > button{
+    display: flex;
+    flex-direction: column;
+    width: 7rem;
+    border: none;
+    background-color: transparent;
+    margin: 0.5rem 0rem;
+    
+}
+.assignment-btn > button:first-child{
+    background-color:var(--primary--color) ;
+    border-radius: 15px;
+
+}
+
+
+.assignment-btn > button > a{
+    padding: 0.5rem;
+    border-radius: 15px;
+    border: 1px solid var(--primary--color) ;
+
+}
+
+
+.assignment-btn > button:first-of-type > a{
+    color: white;
+
+}
+
+.assignment-btn > button:last-of-type > a{
+    color: var(--primary--color);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color:  rgba(52, 52, 194, 0.918);
+    padding: 2.5rem 0rem;
+    border-radius: 0 1rem 0 0;
+}
+footer > p{
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+}
+
+ul{
+    justify-content: center;
+}
+
+footer a{
+    color: white;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
