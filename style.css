@@ -11,7 +11,13 @@ a{
 
 :root{
     --primary--color: rgba(52, 52, 194, 0.918);
+    --secondary--color:rgba(140, 140, 145, 0.719);
 }
+
+body{
+   background-color: rgba(41, 41, 41, 0.925);
+}
+
 li{
     list-style: none;
     display: block;
@@ -20,10 +26,17 @@ li{
    font-size: 1.2rem;
    
 }
+
 a{
     text-decoration: none;
    
 }
+
+
+
+
+
+
 
 
 header, ul{
@@ -39,10 +52,8 @@ header a{
 }
 
 .header{
-    background-color: var(--primary--color);
-    padding: 1.3rem 2rem;
-    border-radius: 0 0 0 1rem;
-   
+    background-color: var( --secondary--color);
+    padding: 1.3rem 2rem;   
 }
 
 .active-page{
@@ -75,6 +86,7 @@ header a{
     font-weight: 700;
     font-size: 3rem;
     margin: 1.4rem 0rem;
+    color: white;
 }
 .intro-name-span{
     color: var(--primary--color);
@@ -122,10 +134,16 @@ border-radius: 10px;
 border:1px solid var(--primary--color); 
 }
 
+.project-section-home{
+    color: white;
+}
+
+
+
 button > a{
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
-padding: 0.7rem 1.1rem;
+padding: 0.7rem 1rem;
 border-radius: 10px;
 }
 
@@ -151,27 +169,30 @@ border-radius: 10px;
 
 /* footer */
 
-
-.social-touch{
-    position: absolute;
-    bottom: 0;
+footer{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    gap: 2rem;
+    background:  var( --secondary--color);
+    background: linear-gradient(90deg, rgb(116, 116, 117) 0%, rgba(45,45,49,0.9332866935836834) 0%, rgb(179, 181, 182) 100%); 
 }
+
 
 .icon-style{
     font-size:35px; 
     color: white; 
 }
 
-footer{
-   display: flex;
-   gap: 3rem;
-   justify-content: center;
-   width: 97.8vw;
-   padding: 1rem;
-   margin-top: 2rem;
-   background: rgba(140, 140, 145, 0.719);
-   background: linear-gradient(90deg, rgb(116, 116, 117) 0%, rgba(45,45,49,0.9332866935836834) 0%, rgb(179, 181, 182) 100%); 
+ul{
+    justify-content: center;
 }
+
+footer a{
+    color: white;
+    font-weight: 400;
+}
+
 
 
 
