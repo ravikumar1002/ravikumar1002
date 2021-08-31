@@ -1,45 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="blog.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="blog.css" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital@1&family=Noto+Sans:ital,wght@0,700;1,400;1,700&family=Roboto&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,700&display=swap"
-        rel="stylesheet">
-</head>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <h3 class="header-name">Ravi Kumar</h3>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="project.html">Project</a></li>
-                <li><a class="active-page" href="blog.html">Blogs</a></li>
-            </ul>
-
-        </nav>
+      <h3 class="header-name">Ravi Kumar</h3>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a class="active-page" href="blog.html">Blogs</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-        <h1>read my blog</h1>
-        <div>
-            <section>
-                <h1>Lorem, ipsum dolor.</h1>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum neque harum architecto placeat, sit
-                    laudantium esse vero recusandae iste, sequi necessitatibus hic repellendus! Porro ducimus facere
-                    repudiandae odit, quisquam, rem iste ipsa, veritatis repellat ut accusantium fugit. Libero, saepe
-                    neque.</p>
-                <button><a href="#">Lorem, ipsum.</a></button>
-            </section>
-        </div>
-    </main>
-</body>
+    <div class="page-content">
+      <main>
+        <h1>read my <span>blog</span></h1>
 
+        <div class="blog">
+          <h2>dummy blog one</h2>
+          <p><small>November, 2020</small></p>
+          <p>
+            The most well-known dummy text is the 'Lorem Ipsum', which is said
+            to have originated in the 16th century. Lorem Ipsum is composed in a
+            pseudo-Latin language which more or less corresponds to 'proper'
+            Latin. It contains a series of real Latin words.
+          </p>
+          <button>Read More</button>
+        </div>
+        <div class="blog">
+          <h2>dummy blog two</h2>
+          <p><small>November, 2020</small></p>
+          <p>
+            The most well-known dummy text is the 'Lorem Ipsum', which is said
+            to have originated in the 16th century. Lorem Ipsum is composed in a
+            pseudo-Latin language which more or less corresponds to 'proper'
+            Latin. It contains a series of real Latin words.
+          </p>
+          <button>Read More</button>
+        </div>
+      </main>
+      <div class="social-touch">
+        <footer>
+          <ul>
+            <li><a href="https://github.com/ravikumar1002" class="fab fa-github icon-style" target="_blank"></a></li>
+          <li><a href="https://www.linkedin.com/in/ravikumar-1002" class="fab fa-linkedin icon-style" target="_blank"></a></li>
+          <li><a href="https://twitter.com/kumarravi1002" class="fab fa-twitter-square icon-style" target="_blank"></a></li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>

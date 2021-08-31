@@ -1,165 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-}
-a{
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-:root{
-    --primary--color: rgba(52, 52, 194, 0.918);
-    --secondary--color:rgba(140, 140, 145, 0.719);
+a {
+  text-decoration: none;
 }
 
-li{
-   list-style: none;
-   display: block;
-   margin: 0.5rem 1rem;
-   font-weight: 500;
-   font-size: 1.2rem;  
-}
-a{
-    text-decoration: none; 
+:root {
+  --primary--color: rgba(52, 52, 194, 0.918);
+  --secondary--color: rgba(140, 140, 145, 0.719);
 }
 
-body{
-    background-color: rgba(41, 41, 41, 0.925);
- }
-
-
-header, ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
+li {
+  list-style: none;
+  display: block;
+  margin: 0.5rem 1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+a {
+  text-decoration: none;
 }
 
-header a{
-    color: white;
+body {
+  background-color: rgba(41, 41, 41, 0.925);
 }
 
-.header{
-    background-color: var( --secondary--color);
-    padding: 1.3rem 2rem;
-   
+header,
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.active-page{
+header a {
+  color: white;
+  font-weight: 400;
+  padding: 0.2rem;
+}
+
+.header a:hover {
+  border-bottom: 2px solid black;
+}
+
+.header {
+  background-color: var(--secondary--color);
+  padding: 1.3rem 2rem;
+}
+
+.active-page {
   font-weight: 700;
+  border-bottom: 2px solid white;
 }
 
-
-.header-name{
-    font-size: 1.5rem;
-    color: white;
-    font-weight: bolder;
+.header-name {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bolder;
 }
- 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-main > h1{
-    text-align: center;
-    margin: 2rem auto auto auto;
-    font-size: 2.7rem;
-    color: white;
+main > h1 {
+  text-align: center;
+  margin: 2rem auto auto auto;
+  font-size: 2.7rem;
+  color: white;
 }
 
 span {
-    color: var(--primary--color);
+  color: var(--primary--color);
 }
 
-.project-list{
-     display: flex;
-     justify-content: center;
-     max-width: 900px;
-     margin: auto;
+.project-list {
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+  margin: auto;
 }
 
-.project{
-    padding: 1rem 2rem;
-    margin: 2rem;
-    border-radius: 17px;
-    background: linear-gradient(315deg, #e3e3e3, #ffffff);
-    box-shadow: 4px 2px 0px #f2f2f2
+.project {
+  padding: 1rem 2rem;
+  margin: 2rem;
+  border-radius: 17px;
+  background: linear-gradient(315deg, #e3e3e3, #ffffff);
+  box-shadow: 4px 2px 0px #f2f2f2;
 }
 
-
-.project> h2{
-    text-align: center;
-    font-style: italic;
+.project > h2 {
+  text-align: center;
+  font-style: italic;
 }
 
-
-.project button{
-padding: 0.3rem 0.7rem;
-font-size: 0.9rem;
-margin-top: 1rem;
-margin-right: 1rem;
-cursor: pointer;
-font-weight: 500;
-
+.project button {
+  padding: 0.3rem 0.7rem;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  font-weight: 500;
 }
 
-.project > div > button:first-child{
-    background-color: #513cc8;
-    color: white;
-    border-radius: 2px;
+.project > div > button:first-child {
+  background-color: #513cc8;
+  color: white;
+  border-radius: 2px;
 }
 
-.project > div > button:last-child{
-    background-color: white;
-    color: #513cc8;
+.project > div > button:last-child {
+  background-color: white;
+  color: #513cc8;
+  border-color: rgb(102, 99, 102);
 }
 
-footer{
-    display: flex;
-    padding: 1rem;
-    justify-content: center;
-    gap: 2rem;
-    background:  var( --secondary--color);
-    background: linear-gradient(90deg, rgb(116, 116, 117) 0%, rgba(45,45,49,0.9332866935836834) 0%, rgb(179, 181, 182) 100%); 
+footer {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  gap: 2rem;
+  background: var(--secondary--color);
+  background: linear-gradient(
+    90deg,
+    rgb(116, 116, 117) 0%,
+    rgba(45, 45, 49, 0.9332866935836834) 0%,
+    rgb(179, 181, 182) 100%
+  );
 }
 
-
-.icon-style{
-    font-size:35px; 
-    color: white; 
+.icon-style {
+  font-size: 35px;
+  color: white;
 }
 
-ul{
-    justify-content: center;
+ul {
+  justify-content: center;
 }
 
-footer a{
-    color: white;
-    font-weight: 400;
+footer a {
+  color: white;
+  font-weight: 400;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
