@@ -105,14 +105,21 @@ span {
 
 .project > div > button:first-child {
   background-color: #513cc8;
+  border-radius: 4px;
+}
+
+.project > div > button:first-child > a{
   color: white;
-  border-radius: 2px;
 }
 
 .project > div > button:last-child {
   background-color: white;
-  color: #513cc8;
   border-color: rgb(102, 99, 102);
+  border-radius: 4px;
+}
+
+.project > div > button:last-child{
+  color: #513cc8;
 }
 
 footer {
