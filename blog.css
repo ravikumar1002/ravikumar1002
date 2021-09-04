@@ -17,6 +17,7 @@ a {
 
 body {
   background-color: rgba(41, 41, 41, 0.925);
+  height: 100vh;
 }
 
 li {
@@ -36,6 +37,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap
 }
 
 header a {
@@ -103,13 +105,17 @@ small {
   cursor: pointer;
   font-weight: 500;
   background-color: #513cc8;
-  color: white;
   border-radius: 2px;
 }
 
+.blog button a{
+  color: white;
+
+}
+
 .social-touch {
-  position: absolute;
-  bottom: 0;
+  position: sticky;
+  top: 100%;
   width: 100%;
 }
 
