@@ -35,6 +35,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 header a {
@@ -94,6 +95,11 @@ span {
   font-style: italic;
 }
 
+small {
+  font-style: italic;
+  color: rgb(102, 100, 100);
+}
+
 .project button {
   padding: 0.3rem 0.7rem;
   font-size: 0.9rem;
@@ -105,14 +111,21 @@ span {
 
 .project > div > button:first-child {
   background-color: #513cc8;
+  border-radius: 4px;
+}
+
+.project > div > button:first-child > a{
   color: white;
-  border-radius: 2px;
 }
 
 .project > div > button:last-child {
   background-color: white;
-  color: #513cc8;
   border-color: rgb(102, 99, 102);
+  border-radius: 4px;
+}
+
+.project > div > button:last-child{
+  color: #513cc8;
 }
 
 footer {
