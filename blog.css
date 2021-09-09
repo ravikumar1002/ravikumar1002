@@ -122,8 +122,8 @@ small {
 footer {
   display: flex;
   padding: 1rem;
+  flex-direction: column;
   justify-content: center;
-  gap: 2rem;
   background: var(--secondary--color);
   background: linear-gradient(
     90deg,
@@ -136,6 +136,13 @@ footer {
 .icon-style {
   font-size: 35px;
   color: white;
+}
+
+
+.footer-text{
+  color: white;
+  text-align: center;
+  font-size: x-large;
 }
 
 ul {
