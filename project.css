@@ -162,3 +162,16 @@ footer a {
   color: white;
   font-weight: 400;
 }
+
+
+.project-divider{
+  color: white;
+  padding: 1rem;
+  background-color: black;
+  margin: 0 1rem;
+}
+
+.white-line{
+  border-bottom: 1px solid white;
+  margin: 1rem;
+}
