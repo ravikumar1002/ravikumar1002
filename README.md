@@ -27,9 +27,9 @@ These are the tools and languages that I have worked with and have experience ab
 <a href="https://getbootstrap.com/" title="Bootstrap"><img src="https://github.com/get-icon/geticon/raw/master/icons/bootstrap.svg" alt="Bootstrap" width="48px" height="48px"></a>  &nbsp;  &nbsp;
 <a href="https://material-ui.com/" title="Material UI"><img src="https://github.com/get-icon/geticon/raw/master/icons/material-ui.svg" alt="Material UI" width="48px" height="48px"></a>  &nbsp;  &nbsp;
 
-#### Tools/Language which I am Learning :
 <a href="https://www.typescriptlang.org/" title="Typescript"><img src="https://github.com/get-icon/geticon/raw/master/icons/typescript-icon.svg" alt="Typescript" width="48px" height="48px"></a>  &nbsp;  &nbsp;
 <a href="https://www.firebase.com/" title="Firebase"><img src="https://github.com/get-icon/geticon/raw/master/icons/firebase.svg" alt="Firebase" width="48px" height="48px"></a>
+
 
 ## Github Stats 📃:
 
