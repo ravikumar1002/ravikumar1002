@@ -1,8 +1,10 @@
-<h1 align="center">Hi 👋, I'm Ravi kumar</h1>
-<h3 align="center"> Frontend developer</h3>
-
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=ravikumar1002&label=Profile%20views&color=0e75b6&style=flat" alt="ravikumar1002" /> </p>
 
+
+<h1 align="center">Hi 👋, I'm Ravi kumar</h1>
+
+<p>
+I'm a passionate learner who's always willing to learn, explore and work across different technologies 💡. I love to explore new technologies and leverage them to solve real-life problems ✨. I'm currently into Web Development 🕸️ and working on frontend tech.</p>
 
 ## Connect with me on :  
 
