@@ -4,7 +4,7 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=ravikumar1002&label=Profile%20views&color=0e75b6&style=flat" alt="ravikumar1002" /> </p>
 
 
-## Connect with me on   
+## Connect with me on :  
 
 [![Gmail logo](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:1002kumarravi@gmail.com)
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ravikumar-1002/)
@@ -13,7 +13,7 @@
 
  ## Tools / Languages:
 
-These are the tools and languages that I have worked with and have experience about using them.
+These are the tools and languages that I have worked with and have experience about using them :
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="JavaScript"><img src="https://github.com/get-icon/geticon/raw/master/icons/javascript.svg" alt="JavaScript" width="48px" height="48px"></a>  &nbsp;  &nbsp; 
 <a href="https://reactjs.org/" title="React"><img src="https://github.com/get-icon/geticon/raw/master/icons/react.svg" alt="React" width="48px" height="48px"></a>   &nbsp;  &nbsp;
@@ -25,16 +25,16 @@ These are the tools and languages that I have worked with and have experience ab
 <a href="https://getbootstrap.com/" title="Bootstrap"><img src="https://github.com/get-icon/geticon/raw/master/icons/bootstrap.svg" alt="Bootstrap" width="48px" height="48px"></a>  &nbsp;  &nbsp;
 <a href="https://material-ui.com/" title="Material UI"><img src="https://github.com/get-icon/geticon/raw/master/icons/material-ui.svg" alt="Material UI" width="48px" height="48px"></a>  &nbsp;  &nbsp;
 
-#### Tools/Language which I am Learning 
+#### Tools/Language which I am Learning :
 <a href="https://www.typescriptlang.org/" title="Typescript"><img src="https://github.com/get-icon/geticon/raw/master/icons/typescript-icon.svg" alt="Typescript" width="48px" height="48px"></a>  &nbsp;  &nbsp;
 <a href="https://www.firebase.com/" title="Firebase"><img src="https://github.com/get-icon/geticon/raw/master/icons/firebase.svg" alt="Firebase" width="48px" height="48px"></a>
 
 ## Github Stats 📃:
 
-<p>
-  <img align="left"  height="180"  src="https://github-readme-stats.vercel.app/api/top-langs?username=ravikumar1002&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="ravikumar1002" /></p>
-
-<p>&nbsp;<img align="center"  height="180"  src="https://github-readme-stats.vercel.app/api?username=ravikumar1002&show_icons=true&locale=en&theme=tokyonight" alt="ravikumar1002" /></p>
+<p align="center">
+    <img align="left"  height="180" src="https://github-readme-stats.vercel.app/api/top-langs?username=ravikumar1002&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="ravikumar1002" /></p>
+    <p>&nbsp;<img align="center"  height="180"  src="https://github-readme-stats.vercel.app/api?username=ravikumar1002&show_icons=true&locale=en&theme=tokyonight" alt="ravikumar1002" /></p>
+</p>
 
 <p><img align="center"  height="180"  src="https://github-readme-streak-stats.herokuapp.com/?user=ravikumar1002&&theme=tokyonight" alt="ravikumar1002" /></p>
 
