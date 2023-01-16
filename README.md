@@ -6,7 +6,7 @@
 <p>
 I'm a passionate learner who's always willing to learn, explore and work across different technologies 💡. I love to explore new technologies and leverage them to solve real-life problems ✨. I'm currently into Web Development 🕸️ and working on frontend tech.</p>
 
-### See my resume:    [Click Here](https://github.com/ravikumar1002/ravikumar1002/files/10383057/resume-2023.pdf)
+### See my resume:    [Click Here](https://github.com/ravikumar1002/ravikumar1002/files/10428000/Resume1-23.-.Google.Docs.pdf)
 
 
 ## Connect with me on :  
