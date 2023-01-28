@@ -1,0 +1,120 @@
+import { Box, Typography, alpha, darken, Theme, useTheme } from "@mui/material";
+import { ReactComponent as Github } from "@resources/svg/github-brands.svg";
+import { ReactComponent as ExternalLink } from "@resources/svg/external-link-alt-solid.svg";
+import makeSxStyles from "@hooks/makeSxStyles";
+
+const useStyles = makeSxStyles((theme: Theme) => ({
+  projectCardContainer: {
+    display: "flex",
+    alignItems: "center",
+    gap: theme.spacing(3),
+    justifyContent: "space-between",
+    height: 200,
+    marginLeft: theme.spacing(2),
+    padding: theme.spacing(1),
+    paddingLeft: theme.spacing(2),
+    marginBottom: theme.spacing(2),
+    boxShadow: `2px 2px 7px 0px ${darken(theme.palette.primary.main, 0.4)}`,
+    transition: theme.transitions.create(["box-shadow"]),
+    "&:hover": {
+      boxShadow: `2px 2px 7px 0px ${darken(theme.palette.primary.main, 0.7)}`,
+    },
+  },
+  proejctTextContainer: {
+    flexGrow: "2",
+    "&>a": {
+      marginBottom: theme.spacing(2),
+      textDecoration: "none",
+      position: "relative",
+      display: "inline-block",
+      "&:after": {
+        position: "absolute",
+        bottom: -3,
+        left: 0,
+        width: "30%",
+        height: 0.1,
+        background: theme.palette.secondary.main,
+        content: "''",
+        transition: theme.transitions.create(["width"]),
+      },
+      "&:hover": {
+        "&:after": {
+          width: "90%",
+        },
+      },
+    },
+  },
+  projectPic: {
+    width: "auto",
+    height: 180,
+    flexGrow: "1",
+    borderRadius: theme.shape.borderRadius,
+  },
+  iconContainer: {
+    display: "flex",
+    alignItems: "center",
+    gap: theme.spacing(2),
+    marginTop: theme.spacing(2),
+    paddingLeft: theme.spacing(3),
+    "&>a>svg": {
+      height: 18,
+      color: alpha(theme.palette.common.white, 0.8),
+      cursor: "pointer",
+      transition: theme.transitions.create(["color", "transform"]),
+      "&:hover": {
+        color: theme.palette.secondary.main,
+        transform: "scale(1.2)",
+      },
+    },
+  },
+  [theme.breakpoints.down("md")]: {
+    projectPic: {
+      height: 150,
+    },
+  },
+  [theme.breakpoints.down("sm")]: {
+    projectPic: {
+      display: "none",
+    },
+  },
+}));
+
+interface IProjectCardProps {
+  title: string;
+  description: string;
+  repoLink: string;
+  liveLink: string;
+  showcaseImage: string;
+}
+
+const ProjectCard = (props: IProjectCardProps) => {
+  const { title, description, repoLink, liveLink, showcaseImage } = props;
+  const theme = useTheme();
+  const classes = useStyles(theme);
+
+  return (
+    <Box sx={classes.projectCardContainer}>
+      <Box sx={classes.proejctTextContainer}>
+        <Typography variant="h6" component="a" href={liveLink}>
+          {title}
+        </Typography>
+        <Typography variant="body2">{description}</Typography>
+        <Box sx={classes.iconContainer}>
+          <a href={repoLink}>
+            <Github />
+          </a>
+          <a href={liveLink}>
+            <ExternalLink />
+          </a>
+        </Box>
+      </Box>
+      <img
+        style={classes?.projectPic}
+        alt={`${title} demo`}
+        src={showcaseImage}
+      />
+    </Box>
+  );
+};
+
+export default ProjectCard;
