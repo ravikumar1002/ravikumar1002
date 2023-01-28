@@ -1,4 +1,4 @@
-import { Box, Divider, alpha, Theme, useTheme } from "@mui/material";
+import { Box, Divider, alpha, Theme, useTheme, keyframes } from "@mui/material";
 import { ReactComponent as Dev } from "@resources/svg/dev-brands.svg";
 import { ReactComponent as LinkedIn } from "@resources/svg/linkedin-brands.svg";
 import { ReactComponent as Twitter } from "@resources/svg/twitter-brands.svg";
@@ -29,22 +29,17 @@ const socialLinks = [
   },
 ];
 
-const LeftSidebar = () => {
-  const theme = useTheme();
-  const classes = useStyles(theme);
-  return (
-    <Box sx={classes.leftSideContainer}>
-      {socialLinks.map((link) => (
-        <li key={link.name}>
-          <a href={link.link} rel="noreferrer" target="_blank">
-            <link.Icon style={classes.socialLink} />
-          </a>
-        </li>
-      ))}
-      <Divider orientation="vertical" sx={classes.verticalLine} />
-    </Box>
-  );
-};
+const growVertically = keyframes`
+    0% {
+      transform: translateY(400px)
+    }
+    50% {
+      transform: translateY(400px)
+    }
+    100% {
+      transform: translateY(0px)
+    }
+  }`;
 
 const useStyles = makeSxStyles((theme: Theme) => ({
   leftSideContainer: {
@@ -60,23 +55,13 @@ const useStyles = makeSxStyles((theme: Theme) => ({
     justifyContent: "flex-end",
     paddingBottom: theme.spacing(16),
     overflow: "hidden",
-    animation: "$growVertically 2s 1",
+    animation: `${growVertically} 1.5s 1`,
     transformOrigin: "bottom",
     [theme.breakpoints.down("sm")]: {
       display: "none",
     },
   },
-  "@keyframes growVertically": {
-    "0%": {
-      transform: "translateY(400px)",
-    },
-    "50%": {
-      transform: "translateY(400px)",
-    },
-    "100%": {
-      transform: "translateY(0px)",
-    },
-  },
+
   linksContainer: {
     display: "flex",
     alignItems: "center",
@@ -103,5 +88,22 @@ const useStyles = makeSxStyles((theme: Theme) => ({
     backgroundColor: theme.palette.secondary.main,
   },
 }));
+
+const LeftSidebar = () => {
+  const theme = useTheme();
+  const classes = useStyles(theme);
+  return (
+    <Box sx={classes.leftSideContainer}>
+      {socialLinks.map((link) => (
+        <li key={link.name}>
+          <a href={link.link} rel="noreferrer" target="_blank">
+            <link.Icon style={classes.socialLink} />
+          </a>
+        </li>
+      ))}
+      <Divider orientation="vertical" sx={classes.verticalLine} />
+    </Box>
+  );
+};
 
 export default LeftSidebar;

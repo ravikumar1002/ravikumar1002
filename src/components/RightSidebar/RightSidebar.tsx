@@ -6,25 +6,21 @@ import {
   Typography,
   Theme,
   useTheme,
+  keyframes,
 } from "@mui/material";
 
-const RightSidebar = () => {
-  const theme = useTheme();
-  const classes = useStyles(theme);
-
-  return (
-    <Box sx={classes.leftSideContainer}>
-      <Typography
-        component="a"
-        sx={classes.linkStyle}
-        href="mailto:1002kumarravi@gmail.com"
-      >
-        1002kumarravi@gmail.com
-      </Typography>
-      <Divider orientation="vertical" sx={classes.verticalLine} />
-    </Box>
-  );
-};
+const growVertically = keyframes`
+  0%  {
+    transform: translateY(400px);
+  }
+  50%  {
+    transform: translateY(400px);
+  }
+  100%  {
+    transform: translateY(0px);
+  }
+}
+`;
 
 const useStyles = makeSxStyles((theme: Theme) => ({
   leftSideContainer: {
@@ -33,7 +29,6 @@ const useStyles = makeSxStyles((theme: Theme) => ({
     bottom: "0",
     right: theme.spacing(5),
     left: "auto",
-    // height: "100vh",
     width: theme.spacing(5),
     display: "flex",
     alignItems: "center",
@@ -41,21 +36,10 @@ const useStyles = makeSxStyles((theme: Theme) => ({
     flexDirection: "column",
     justifyContent: "flex-end",
     paddingBottom: theme.spacing(16),
-    animation: "$growVertically 2s 1",
+    animation: `${growVertically} 1.5s 1`,
     transformOrigin: "bottom",
     [theme.breakpoints.down("sm")]: {
       display: "none",
-    },
-  },
-  "@keyframes growVertically": {
-    "0%": {
-      transform: "translateY(400px)",
-    },
-    "50%": {
-      transform: "translateY(400px)",
-    },
-    "100%": {
-      transform: "translateY(0px)",
     },
   },
   linkStyle: {
@@ -79,5 +63,23 @@ const useStyles = makeSxStyles((theme: Theme) => ({
     backgroundColor: theme.palette.secondary.main,
   },
 }));
+
+const RightSidebar = () => {
+  const theme = useTheme();
+  const classes = useStyles(theme);
+
+  return (
+    <Box sx={classes.leftSideContainer}>
+      <Typography
+        component="a"
+        sx={classes.linkStyle}
+        href="mailto:1002kumarravi@gmail.com"
+      >
+        1002kumarravi@gmail.com
+      </Typography>
+      <Divider orientation="vertical" sx={classes.verticalLine} />
+    </Box>
+  );
+};
 
 export default RightSidebar;

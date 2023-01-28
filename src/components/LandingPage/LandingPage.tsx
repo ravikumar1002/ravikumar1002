@@ -1,5 +1,22 @@
 import makeSxStyles from "@hooks/makeSxStyles";
-import { Box, darken, alpha, Typography, Theme, useTheme } from "@mui/material";
+import {
+  Box,
+  darken,
+  alpha,
+  Typography,
+  Theme,
+  useTheme,
+  keyframes,
+} from "@mui/material";
+
+const slideDown = keyframes`
+  0% {
+    transform: translate(-80%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}`;
 
 const useStyles = makeSxStyles((theme: Theme) => ({
   landingPageContainer: {
@@ -7,16 +24,9 @@ const useStyles = makeSxStyles((theme: Theme) => ({
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
-    animation: "$slideDown 1.5s",
+    animation: `${slideDown} 1.2s`,
   },
-  "@keyframes slideDown": {
-    "0%": {
-      transform: "translate(-80%, 0)",
-    },
-    "100%": {
-      transform: "translate(0, 0)",
-    },
-  },
+
   nameStyle: {
     color: alpha(theme.palette.common.white, 0.8),
     fontWeight: 400,

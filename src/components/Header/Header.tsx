@@ -8,9 +8,58 @@ import {
   useTheme,
   Toolbar,
   alpha,
+  keyframes,
 } from "@mui/material";
 
 import { ReactComponent as Logo } from "@resources/svg/logo.svg";
+
+const logoAnim = keyframes`
+  0% {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  99% {
+    left: 88px;
+    top: 10px;
+    position: fixed;
+    transform: translate(0%, 0%);
+  }
+  100% {
+    position: relative;
+  }
+}`;
+
+const logoAnimMobile = keyframes`
+  0% {
+    position: fixed
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+  }
+  99% {
+    left: 36px
+    top: 8px
+    position: fixed
+    transform: translate(0%, 0%)
+  }
+  100% {
+    position: relative
+  }
+}`;
+
+const slideLeft = keyframes`
+  0% {
+    transform: translate(120%, 0)
+  }
+  35% {
+    transform: translate(120%, 0)
+  }
+  100% {
+    transform: translate(0, 0)
+  },
+},`;
 
 const useStyles = makeSxStyles((theme: Theme) => ({
   appbarStyle: {
@@ -27,7 +76,7 @@ const useStyles = makeSxStyles((theme: Theme) => ({
     display: "flex",
     alignItems: "center",
     gap: theme.spacing(2),
-    animation: "$slideLeft 2s",
+    animation: `${slideLeft} 1.2s`,
     "&>a": {
       fontFamily: `"SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace`,
       transition: theme.transitions.create(["color", "background-color"]),
@@ -38,44 +87,11 @@ const useStyles = makeSxStyles((theme: Theme) => ({
     },
   },
   logoStyle: {
-    animation: "$logoAnim 1s",
+    animation: `${logoAnim} 1s`,
     cursor: "pointer",
     height: 45,
   },
-  "@keyframes logoAnim": {
-    "0%": {
-      position: "fixed",
-      left: "50%",
-      top: "50%",
-      transform: "translate(-50%, -50%)",
-    },
-    "99%": {
-      left: "88px",
-      top: "10px",
-      position: "fixed",
-      transform: "translate(0%, 0%)",
-    },
-    "100%": {
-      position: "relative",
-    },
-  },
-  "@keyframes logoAnimMobile": {
-    "0%": {
-      position: "fixed",
-      left: "50%",
-      top: "50%",
-      transform: "translate(-50%, -50%)",
-    },
-    "99%": {
-      left: "36px",
-      top: "8px",
-      position: "fixed",
-      transform: "translate(0%, 0%)",
-    },
-    "100%": {
-      position: "relative",
-    },
-  },
+
   [theme.breakpoints.down("xs")]: {
     navItemsContainer: {
       display: "none",
@@ -84,18 +100,7 @@ const useStyles = makeSxStyles((theme: Theme) => ({
       padding: theme.spacing(0, 2),
     },
     logoStyle: {
-      animation: "$logoAnimMobile 1s",
-    },
-  },
-  "@keyframes slideLeft": {
-    "0%": {
-      transform: "translate(120%, 0)",
-    },
-    "35%": {
-      transform: "translate(120%, 0)",
-    },
-    "100%": {
-      transform: "translate(0, 0)",
+      animation: `${logoAnimMobile} 1s`,
     },
   },
 }));

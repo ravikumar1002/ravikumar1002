@@ -1,59 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://i.ibb.co/h76jqZ6/favicon-32x32.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ravi Kumar | ReactJS Developer</title>
+    <meta
+      name="description"
+      content="Hey, I'm Ravi Kumar, frontend developer, and JS enthusiast"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="https://i.ibb.co/h76jqZ6/favicon-32x32.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ravi Kumar | ReactJS Developer</title>
-  <meta name="description" content="Hey, I'm Ravi Kumar, frontend developer, and JS enthusiast" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/index.css" />
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./src/index.css" />
-  <script>
-    window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-CENN0Q2PZR");
+    </script>
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-CENN0Q2PZR");
-  </script>
+    <script>
+      function onLoad() {
+        setTimeout(() => {
+          const rootEl = document.getElementById("root");
+          rootEl.style.display = "block";
 
-  <script>
-    function onLoad() {
-      setTimeout(() => {
-        const rootEl = document.getElementById("root");
-        rootEl.style.display = "block";
+          var loader = document.getElementById("loader");
+          loader.className = "";
+          loader.style.display = "none";
+        }, 1000);
+      }
+    </script>
+  </head>
 
-        var loader = document.getElementById("loader");
-        loader.className = "";
-        loader.style.display = "none";
-      }, 1500);
-    }
-  </script>
-</head>
-
-<body onload="onLoad()">
-  <div class="loader" id="loader">
-    <!-- <?xml version="1.0" encoding="utf-8"?> -->
-    <svg class="icon1 icon" viewBox="-63.324 116.706 106.944 120.544" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M -11.991 117.315 Q -9.852 116.097 -7.713 117.315 L 41.481 145.32 Q 43.62 146.538 43.62 148.973 L 43.62 204.983 Q 43.62 207.419 41.481 208.636 L -7.713 236.641 Q -9.852 237.859 -11.991 236.641 L -61.185 208.636 Q -63.324 207.419 -63.324 204.983 L -63.324 148.973 Q -63.324 146.538 -61.185 145.32 Z" />
-    </svg>
-    <!-- <?xml version="1.0" encoding="utf-8"?> -->
-    <svg class="icon2 icon" viewBox="-63.324 116.706 106.944 120.544" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M -11.991 117.315 Q -9.852 116.097 -7.713 117.315 L 41.481 145.32 Q 43.62 146.538 43.62 148.973 L 43.62 204.983 Q 43.62 207.419 41.481 208.636 L -7.713 236.641 Q -9.852 237.859 -11.991 236.641 L -61.185 208.636 Q -63.324 207.419 -63.324 204.983 L -63.324 148.973 Q -63.324 146.538 -61.185 145.32 Z" />
-    </svg>
-    <!-- <?xml version="1.0" encoding="utf-8"?> -->
-    <svg class="icon3 icon" viewBox="-63.324 116.706 106.944 120.544" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M -11.991 117.315 Q -9.852 116.097 -7.713 117.315 L 41.481 145.32 Q 43.62 146.538 43.62 148.973 L 43.62 204.983 Q 43.62 207.419 41.481 208.636 L -7.713 236.641 Q -9.852 237.859 -11.991 236.641 L -61.185 208.636 Q -63.324 207.419 -63.324 204.983 L -63.324 148.973 Q -63.324 146.538 -61.185 145.32 Z" />
-    </svg>
-  </div>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
-</body>
-
+  <body onload="onLoad()">
+    <div class="loader" id="loader">
+      <!-- <?xml version="1.0" encoding="utf-8"?> -->
+      <svg
+        class="icon1 icon"
+        viewBox="-63.324 116.706 106.944 120.544"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M -11.991 117.315 Q -9.852 116.097 -7.713 117.315 L 41.481 145.32 Q 43.62 146.538 43.62 148.973 L 43.62 204.983 Q 43.62 207.419 41.481 208.636 L -7.713 236.641 Q -9.852 237.859 -11.991 236.641 L -61.185 208.636 Q -63.324 207.419 -63.324 204.983 L -63.324 148.973 Q -63.324 146.538 -61.185 145.32 Z"
+        />
+      </svg>
+      <!-- <?xml version="1.0" encoding="utf-8"?> -->
+      <svg
+        class="icon2 icon"
+        viewBox="-63.324 116.706 106.944 120.544"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M -11.991 117.315 Q -9.852 116.097 -7.713 117.315 L 41.481 145.32 Q 43.62 146.538 43.62 148.973 L 43.62 204.983 Q 43.62 207.419 41.481 208.636 L -7.713 236.641 Q -9.852 237.859 -11.991 236.641 L -61.185 208.636 Q -63.324 207.419 -63.324 204.983 L -63.324 148.973 Q -63.324 146.538 -61.185 145.32 Z"
+        />
+      </svg>
+      <!-- <?xml version="1.0" encoding="utf-8"?> -->
+      <svg
+        class="icon3 icon"
+        viewBox="-63.324 116.706 106.944 120.544"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M -11.991 117.315 Q -9.852 116.097 -7.713 117.315 L 41.481 145.32 Q 43.62 146.538 43.62 148.973 L 43.62 204.983 Q 43.62 207.419 41.481 208.636 L -7.713 236.641 Q -9.852 237.859 -11.991 236.641 L -61.185 208.636 Q -63.324 207.419 -63.324 204.983 L -63.324 148.973 Q -63.324 146.538 -61.185 145.32 Z"
+        />
+      </svg>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

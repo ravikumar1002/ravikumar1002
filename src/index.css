@@ -1,11 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #root {
   display: none;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  scroll-behavior: smooth;
+}
+
+::-moz-selection {
+  background: #79ffe1;
+  color: #003049;
+}
+::selection {
+  background: #79ffe1;
+  color: #003049;
 }
 
 .icon {
