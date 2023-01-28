@@ -29,7 +29,7 @@ const useStyles = makeSxStyles((theme: Theme) => ({
     gap: theme.spacing(2),
     animation: "$slideLeft 2s",
     "&>a": {
-      fontFamily: theme.custom.fontFamily.codeStyle,
+      fontFamily: `"SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace`,
       transition: theme.transitions.create(["color", "background-color"]),
       "&:hover": {
         backgroundColor: alpha(theme.palette.secondary.main, 0.1),

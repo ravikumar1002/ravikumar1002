@@ -1,5 +1,12 @@
 import makeSxStyles from "@hooks/makeSxStyles";
-import { Box, Divider, alpha, Typography, Theme, useTheme } from "@mui/material";
+import {
+  Box,
+  Divider,
+  alpha,
+  Typography,
+  Theme,
+  useTheme,
+} from "@mui/material";
 
 const RightSidebar = () => {
   const theme = useTheme();
@@ -54,7 +61,7 @@ const useStyles = makeSxStyles((theme: Theme) => ({
   linkStyle: {
     writingMode: "vertical-rl",
     textDecoration: "none",
-    fontFamily: theme.custom.fontFamily.codeStyle,
+    fontFamily: `"SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace`,
     fontSize: 12,
     padding: theme.spacing(1),
     letterSpacing: "0.1em",
