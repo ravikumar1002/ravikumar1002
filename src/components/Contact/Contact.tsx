@@ -8,8 +8,11 @@ import {
   useTheme,
   alpha,
 } from "@mui/material";
-import { ReactComponent as Dev } from "@resources/svg/dev-brands.svg";
-import { ReactComponent as Github } from "@resources/svg/github-brands.svg";
+import { ReactComponent as Dev } from "@resources/svg/dev-logo.svg";
+import { ReactComponent as Github } from "@resources/svg/github-logo.svg";
+import { ReactComponent as Twitter } from "@resources/svg/twitter-logo.svg";
+import { ReactComponent as Linkedin } from "@resources/svg/linkedin-logo.svg";
+
 import makeSxStyles from "@hooks/makeSxStyles";
 
 const socialLinks = [
@@ -17,6 +20,16 @@ const socialLinks = [
     name: "Dev",
     Icon: (props: JSX.Element) => <Dev {...props} />,
     link: "https://dev.to/ravikumar1002",
+  },
+  {
+    name: "Twitter",
+    Icon: (props: JSX.Element) => <Twitter {...props} />,
+    link: "https://twitter.com/kumarravi1002",
+  },
+  {
+    name: "Linkedin",
+    Icon: (props: JSX.Element) => <Linkedin {...props} />,
+    link: "https://www.linkedin.com/in/ravikumar-1002/",
   },
   {
     name: "Github",
@@ -59,7 +72,8 @@ const useStyles = makeSxStyles((theme: Theme) => ({
     justifyContent: "center",
     gap: theme.spacing(4),
     "&>a>svg": {
-      width: theme.spacing(3),
+      width: theme.spacing(4),
+      height: theme.spacing(4),
       cursor: "pointer",
       color: alpha(theme.palette.common.white, 0.8),
       transition: theme.transitions.create("transform"),

@@ -110,13 +110,15 @@ const useStyles = makeSxStyles((theme: Theme) => ({
     "&> div:first-child": {
       width: {
         xs: "100%",
-        sm: "60%",
+        sm: "80%",
+        lg: "70%",
+        md: "60%",
       },
     },
     "&> div:last-child": {
       display: {
         xs: "none",
-        sm: "inherit",
+        md: "inherit",
       },
       width: "40%",
     },
@@ -143,8 +145,11 @@ const useStyles = makeSxStyles((theme: Theme) => ({
       width: 35,
       height: 35,
       cursor: "pointer",
-      color: `${alpha(theme.palette.common.white, 0.8)}`,
-      transition: "color 0.3s",
+      transition: theme.transitions.create("transform"),
+      "&:hover": {
+        color: theme.palette.secondary.main,
+        transform: "scale(1.1)",
+      },
     },
   },
 }));
