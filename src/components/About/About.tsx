@@ -204,7 +204,7 @@ const About = () => {
           </Typography>
           <Box sx={classes.logosContainer}>
             {techs.map((item, index) => (
-              <item.Icon key={item.name} />
+              <item.Icon key={item.name} title= {item.name} />
             ))}
           </Box>
         </Box>

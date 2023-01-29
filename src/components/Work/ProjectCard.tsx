@@ -89,10 +89,10 @@ const ProjectCard = (props: IProjectCardProps) => {
         </Typography>
         <Typography variant="body2">{description}</Typography>
         <Box sx={classes.iconContainer}>
-          <a href={repoLink}>
+          <a href={repoLink} target="_blank" >
             <Github />
           </a>
-          <a href={liveLink}>
+          <a href={liveLink} target="_blank" >
             <ExternalLink />
           </a>
         </Box>
