@@ -176,10 +176,27 @@ const Header = () => {
               Blogs
             </Button>
             <Button
+              target='_blank'
+              component='a'
+              sx={{
+                display: {
+                  xs: "none",
+                  sm: "flex",
+                },
+              }}
+              size='small'
+              href='https://github.com/ravikumar1002/'
+            >
+              GitHub
+            </Button>
+            <Button
               target="_blank"
               component="a"
               variant="outlined"
               href="https://drive.google.com/file/d/1QMKeu0q-9ZcnaU6Jvqk2s82ZTUvbjZdL/view?usp=share_link"
+              sx={{
+                fontSize: "1.1rem"
+              }}
             >
               Resume
             </Button>
