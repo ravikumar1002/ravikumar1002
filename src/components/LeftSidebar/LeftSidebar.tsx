@@ -14,7 +14,7 @@ const socialLinks = [
   {
     name: "LinkedIn",
     Icon: (props: JSX.Element) => <LinkedIn {...props} />,
-    link: "https://www.linkedin.com/in/ravikumar-1002/",
+    link: "https://www.linkedin.com/in/ravikumar1002/",
   },
   {
     name: "Dev",

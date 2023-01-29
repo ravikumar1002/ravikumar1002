@@ -29,7 +29,7 @@ const socialLinks = [
   {
     name: "Linkedin",
     Icon: () => <Linkedin/>,
-    link: "https://www.linkedin.com/in/ravikumar-1002/",
+    link: "https://www.linkedin.com/in/ravikumar1002/",
   },
   {
     name: "Github",
