@@ -13,15 +13,11 @@ import RightSidebar from "@components/RightSidebar";
 const useStyles = makeSxStyles((theme: Theme) => ({
   pageContainer: {
     backgroundColor: theme.palette.primary.main,
-    padding: theme.spacing(0, 22),
-    [theme.breakpoints.down("md")]: {
-      padding: theme.spacing(0, 20),
-    },
-    [theme.breakpoints.down("sm")]: {
-      padding: theme.spacing(0, 12),
-    },
-    [theme.breakpoints.down("xs")]: {
-      padding: theme.spacing(0, 4),
+    padding: {
+      lg: theme.spacing(0, 22),
+      md: theme.spacing(0, 20),
+      sm: theme.spacing(0, 12),
+      xs: theme.spacing(0, 4),
     },
   },
 }));
