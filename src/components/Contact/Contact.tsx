@@ -18,22 +18,22 @@ import makeSxStyles from "@hooks/makeSxStyles";
 const socialLinks = [
   {
     name: "Dev",
-    Icon: (props: JSX.Element) => <Dev {...props} />,
+    Icon: () => <Dev/>,
     link: "https://dev.to/ravikumar1002",
   },
   {
     name: "Twitter",
-    Icon: (props: JSX.Element) => <Twitter {...props} />,
+    Icon: () => <Twitter/>,
     link: "https://twitter.com/kumarravi1002",
   },
   {
     name: "Linkedin",
-    Icon: (props: JSX.Element) => <Linkedin {...props} />,
+    Icon: () => <Linkedin/>,
     link: "https://www.linkedin.com/in/ravikumar-1002/",
   },
   {
     name: "Github",
-    Icon: (props: JSX.Element) => <Github {...props} />,
+    Icon: () => <Github/>,
     link: "https://github.com/ravikumar1002",
   },
 ];
