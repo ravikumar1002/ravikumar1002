@@ -9,8 +9,14 @@ const useStyles = makeSxStyles((theme: Theme) => ({
     alignItems: "center",
     gap: theme.spacing(3),
     justifyContent: "space-between",
-    height: 200,
-    marginLeft: theme.spacing(2),
+    height: {
+      xs: "100%",
+      sm: 200,
+    },
+    marginLeft: {
+      xs: theme.spacing(0),
+      sm: theme.spacing(2),
+    },
     padding: theme.spacing(1),
     paddingLeft: theme.spacing(2),
     marginBottom: theme.spacing(2),
@@ -44,12 +50,6 @@ const useStyles = makeSxStyles((theme: Theme) => ({
       },
     },
   },
-  projectPic: {
-    width: "auto",
-    height: 180,
-    flexGrow: "1",
-    borderRadius: theme.shape.borderRadius,
-  },
   iconContainer: {
     display: "flex",
     alignItems: "center",
@@ -67,16 +67,6 @@ const useStyles = makeSxStyles((theme: Theme) => ({
       },
     },
   },
-  [theme.breakpoints.down("md")]: {
-    projectPic: {
-      height: 150,
-    },
-  },
-  [theme.breakpoints.down("sm")]: {
-    projectPic: {
-      display: "none",
-    },
-  },
 }));
 
 interface IProjectCardProps {
@@ -84,11 +74,10 @@ interface IProjectCardProps {
   description: string;
   repoLink: string;
   liveLink: string;
-  showcaseImage: string;
 }
 
 const ProjectCard = (props: IProjectCardProps) => {
-  const { title, description, repoLink, liveLink, showcaseImage } = props;
+  const { title, description, repoLink, liveLink } = props;
   const theme = useTheme();
   const classes = useStyles(theme);
 
@@ -108,11 +97,6 @@ const ProjectCard = (props: IProjectCardProps) => {
           </a>
         </Box>
       </Box>
-      <img
-        style={classes?.projectPic}
-        alt={`${title} demo`}
-        src={showcaseImage}
-      />
     </Box>
   );
 };

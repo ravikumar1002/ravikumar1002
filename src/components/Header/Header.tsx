@@ -33,38 +33,41 @@ const logoAnim = keyframes`
 
 const logoAnimMobile = keyframes`
   0% {
-    position: fixed
-    left: 50%
-    top: 50%
-    transform: translate(-50%, -50%)
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
   99% {
-    left: 36px
-    top: 8px
-    position: fixed
-    transform: translate(0%, 0%)
+    left: 36px;
+    top: 8px;
+    position: fixed;
+    transform: translate(0%, 0%);
   }
   100% {
-    position: relative
+    position: relative;
   }
 }`;
 
 const slideLeft = keyframes`
   0% {
-    transform: translate(120%, 0)
+    transform: translate(120%, 0);
   }
   35% {
-    transform: translate(120%, 0)
+    transform: translate(120%, 0);
   }
   100% {
-    transform: translate(0, 0)
+    transform: translate(0, 0);
   },
 },`;
 
 const useStyles = makeSxStyles((theme: Theme) => ({
   appbarStyle: {
     transition: theme.transitions.create(["box-shadow"]),
-    padding: theme.spacing(0, 8),
+    padding: {
+      xs: theme.spacing(0, 2),
+      sm: theme.spacing(0, 8),
+    },
     overflow: "hidden",
   },
   toolbarContainer: {
@@ -87,21 +90,12 @@ const useStyles = makeSxStyles((theme: Theme) => ({
     },
   },
   logoStyle: {
-    animation: `${logoAnim} 1s`,
+    animation: {
+      xs: `${logoAnimMobile} 1s`,
+      sm: `${logoAnim} 1s`,
+    },
     cursor: "pointer",
     height: 45,
-  },
-
-  [theme.breakpoints.down("xs")]: {
-    navItemsContainer: {
-      display: "none",
-    },
-    appbarStyle: {
-      padding: theme.spacing(0, 2),
-    },
-    logoStyle: {
-      animation: `${logoAnimMobile} 1s`,
-    },
   },
 }));
 
@@ -155,6 +149,12 @@ const Header = () => {
                 onClick={() =>
                   handleNavigation(`${item.toLowerCase()}-section`)
                 }
+                sx={{
+                  display: {
+                    xs: "none",
+                    sm: "flex",
+                  },
+                }}
                 component="a"
                 key={item}
               >
@@ -164,6 +164,12 @@ const Header = () => {
             <Button
               target="_blank"
               component="a"
+              sx={{
+                display: {
+                  xs: "none",
+                  sm: "flex",
+                },
+              }}
               size="small"
               href="https://dev.to/ravikumar1002"
             >
@@ -173,9 +179,9 @@ const Header = () => {
               target="_blank"
               component="a"
               variant="outlined"
-              href="https://github.com/ravikumar1002"
+              href="https://drive.google.com/file/d/1QMKeu0q-9ZcnaU6Jvqk2s82ZTUvbjZdL/view?usp=share_link"
             >
-              Github
+              Resume
             </Button>
           </Box>
         </Toolbar>

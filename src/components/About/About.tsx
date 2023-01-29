@@ -7,6 +7,7 @@ import { ReactComponent as HtmlLogo } from "@resources/svg/html5-logo.svg";
 import { ReactComponent as Css3Logo } from "@resources/svg/css3-logo.svg";
 import { ReactComponent as GithubLogo } from "@resources/svg/github-brand-logo.svg";
 import { ReactComponent as JsLogo } from "@resources/svg/js-square-logo.svg";
+import { ReactComponent as FireBaseLogo } from "@resources/svg/firebase-logo.svg";
 
 const techs = [
   {
@@ -38,6 +39,11 @@ const techs = [
     name: "github",
     Icon: GithubLogo,
     color: "#000",
+  },
+  {
+    name: "firebase",
+    Icon: FireBaseLogo,
+    color: "#f0db4f",
   },
 ];
 
@@ -71,12 +77,24 @@ const useStyles = makeSxStyles((theme: Theme) => ({
     alignItems: "center",
     flexDirection: "row",
     gap: theme.spacing(5),
-    paddingTop: theme.spacing(4),
-    height: "60%",
+    paddingTop: {
+      xs: theme.spacing(2),
+      sm: theme.spacing(4),
+    },
+    height: {
+      xs: "60%",
+    },
     "&> div:first-child": {
-      width: "60%",
+      width: {
+        xs: "100%",
+        sm: "60%",
+      },
     },
     "&> div:last-child": {
+      display: {
+        xs: "none",
+        sm: "inherit",
+      },
       width: "40%",
     },
   },
@@ -122,21 +140,9 @@ const useStyles = makeSxStyles((theme: Theme) => ({
         "&.logo5": {
           color: techs[5].color,
         },
-      },
-    },
-  },
-  [theme.breakpoints.down("xs")]: {
-    contentContainer: {
-      display: "flex",
-      alignItems: "center",
-      flexDirection: "row",
-      gap: theme.spacing(5),
-      paddingTop: theme.spacing(2),
-      "&> div:first-child": {
-        width: "100%",
-      },
-      "&> div:last-child": {
-        display: "none",
+        "&.logo6": {
+          color: techs[6].color,
+        },
       },
     },
   },
@@ -151,23 +157,24 @@ const About = () => {
         About me
       </Typography>
       <Box sx={classes.contentContainer}>
-        <Box>
-          <Typography component={"span"} sx={classes.aboutText}>
+        <Box
+          sx={{
+            lineHeight: 1.5,
+          }}
+        >
+          <Typography component={"div"} sx={classes.aboutText}>
             Hello! I&apos;m Ravi Kumar, a frontend web developer who enjoys
             building things that live on the internet.
           </Typography>
-          {" "}
           <Typography
-            component={"span"}
+            component={"div"}
             style={{ marginTop: 8 }}
             sx={classes.aboutText}
           >
-            I love working with
-            {" "}
-            <Typography component={"span"} className={`${classes.jsWordStyle}`}>
+            I love working with{" "}
+            <Typography component={"span"} sx={classes.jsWordStyle}>
               Javascript
-            </Typography>
-            {" "}
+            </Typography>{" "}
             and web technologies. I majorly work with{" "}
             <Typography component={"span"} sx={classes.reactWordStyle}>
               React
@@ -175,11 +182,10 @@ const About = () => {
             and frontend tools and technologies.
           </Typography>
           <Typography
-            component={"span"}
+            component={"div"}
             style={{ marginTop: 8 }}
             sx={classes.aboutText}
           >
-            {" "}
             Besides this, I strictly prefer writing well-documented readable
             code.
           </Typography>

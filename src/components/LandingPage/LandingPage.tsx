@@ -30,9 +30,16 @@ const useStyles = makeSxStyles((theme: Theme) => ({
   nameStyle: {
     color: alpha(theme.palette.common.white, 0.8),
     fontWeight: 400,
+    fontSize: {
+      xs: "3rem",
+      sm: "3.75rem",
+    },
   },
   slagLine: {
-    fontSize: "3.7rem",
+    fontSize: {
+      xs: "2.5rem",
+      sm: "3.7rem",
+    },
   },
   tagline: {
     maxWidth: "500px",
@@ -44,7 +51,10 @@ const useStyles = makeSxStyles((theme: Theme) => ({
     zIndex: 20,
     position: "relative",
     color: "#fff",
-    fontSize: "3.7rem",
+    fontSize: {
+      xs: "2.5rem",
+      sm: "3.7rem",
+    },
 
     "&:after": {
       content: `""`,
@@ -68,14 +78,6 @@ const useStyles = makeSxStyles((theme: Theme) => ({
         bottom: 3,
         boxShadow: "none",
       },
-    },
-  },
-  [theme.breakpoints.down("xs")]: {
-    nameStyle: {
-      fontSize: "3rem",
-    },
-    slagLine: {
-      fontSize: "2.5rem",
     },
   },
 }));
