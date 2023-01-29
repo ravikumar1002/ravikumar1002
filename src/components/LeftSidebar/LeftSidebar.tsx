@@ -16,7 +16,6 @@ const socialLinks = [
     Icon: (props: JSX.Element) => <LinkedIn {...props} />,
     link: "https://www.linkedin.com/in/ravikumar-1002/",
   },
-
   {
     name: "Dev",
     Icon: (props: JSX.Element) => <Dev {...props} />,
@@ -24,7 +23,7 @@ const socialLinks = [
   },
   {
     name: "Twitter",
-    Icon: (props: any) => <Twitter {...props} />,
+    Icon: (props: JSX.Element) => <Twitter {...props} />,
     link: "https://twitter.com/kumarravi1002",
   },
 ];
@@ -97,7 +96,10 @@ const LeftSidebar = () => {
       {socialLinks.map((link) => (
         <li key={link.name}>
           <a href={link.link} rel="noreferrer" target="_blank">
-            <link.Icon style={classes.socialLink} />
+            <link.Icon
+              //@ts-ignore
+              style={classes.socialLink}
+            />
           </a>
         </li>
       ))}
