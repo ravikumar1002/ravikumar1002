@@ -83,7 +83,7 @@ const useStyles = makeSxStyles((theme: Theme) => ({
   },
   socialLink: {
     width: "18px",
-    height: "18px",
+    height: "22px",
     display: "inline-block",
     color: alpha(theme.palette.common.white, 0.8),
     transition: theme.transitions.create(["color", "transform"]),
@@ -107,24 +107,23 @@ const LeftSidebar = () => {
   return (
     <Box sx={classes.leftSideContainer}>
       {socialLinks.map((link) => (
-        <li key={link.name}>
-          <Typography
-            sx={classes.socialLink}
-            component="a"
-            href={link.link}
-            rel="noreferrer"
-            target="_blank"
-          >
-            <link.Icon
-              style={{
-                fill: "inherit",
-                display: "block",
-                height: "100%",
-                width: "100%",
-              }}
-            />
-          </Typography>
-        </li>
+        <Typography
+          sx={classes.socialLink}
+          component="a"
+          href={link.link}
+          rel="noreferrer"
+          target="_blank"
+          key={link.name}
+        >
+          <link.Icon
+            style={{
+              fill: "inherit",
+              display: "block",
+              height: "100%",
+              width: "100%",
+            }}
+          />
+        </Typography>
       ))}
       <Divider orientation="vertical" sx={classes.verticalLine} />
     </Box>
