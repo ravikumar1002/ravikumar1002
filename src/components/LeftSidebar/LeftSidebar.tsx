@@ -1,29 +1,41 @@
-import { Box, Divider, alpha, Theme, useTheme, keyframes } from "@mui/material";
+import {
+  Box,
+  Divider,
+  alpha,
+  Theme,
+  useTheme,
+  keyframes,
+  Typography,
+} from "@mui/material";
 import { ReactComponent as Dev } from "@resources/svg/dev-brands.svg";
 import { ReactComponent as LinkedIn } from "@resources/svg/linkedin-brands.svg";
 import { ReactComponent as Twitter } from "@resources/svg/twitter-brands.svg";
 import { ReactComponent as Github } from "@resources/svg/github-brands.svg";
 import makeSxStyles from "@hooks/makeSxStyles";
 
+type SVGProps = React.SVGProps<SVGSVGElement> & {
+  title?: string | undefined;
+};
+
 const socialLinks = [
   {
     name: "Github",
-    Icon: (props: JSX.Element) => <Github {...props} />,
+    Icon: (props: SVGProps) => <Github {...props} />,
     link: "https://github.com/ravikumar1002",
   },
   {
     name: "LinkedIn",
-    Icon: (props: JSX.Element) => <LinkedIn {...props} />,
+    Icon: (props: SVGProps) => <LinkedIn {...props} />,
     link: "https://www.linkedin.com/in/ravikumar1002/",
   },
   {
     name: "Dev",
-    Icon: (props: JSX.Element) => <Dev {...props} />,
+    Icon: (props: SVGProps) => <Dev {...props} />,
     link: "https://dev.to/ravikumar1002",
   },
   {
     name: "Twitter",
-    Icon: (props: JSX.Element) => <Twitter {...props} />,
+    Icon: (props: SVGProps) => <Twitter {...props} />,
     link: "https://twitter.com/kumarravi1002",
   },
 ];
@@ -72,6 +84,7 @@ const useStyles = makeSxStyles((theme: Theme) => ({
   socialLink: {
     width: "18px",
     height: "18px",
+    display: "inline-block",
     color: alpha(theme.palette.common.white, 0.8),
     transition: theme.transitions.create(["color", "transform"]),
     cursor: "pointer",
@@ -95,12 +108,22 @@ const LeftSidebar = () => {
     <Box sx={classes.leftSideContainer}>
       {socialLinks.map((link) => (
         <li key={link.name}>
-          <a href={link.link} rel="noreferrer" target="_blank">
+          <Typography
+            sx={classes.socialLink}
+            component="a"
+            href={link.link}
+            rel="noreferrer"
+            target="_blank"
+          >
             <link.Icon
-              //@ts-ignore
-              style={classes.socialLink}
+              style={{
+                fill: "inherit",
+                display: "block",
+                height: "100%",
+                width: "100%",
+              }}
             />
-          </a>
+          </Typography>
         </li>
       ))}
       <Divider orientation="vertical" sx={classes.verticalLine} />
