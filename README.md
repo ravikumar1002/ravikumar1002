@@ -14,7 +14,7 @@ I'm a passionate learner who's always willing to learn, explore and work across 
 [![Gmail logo](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:1002kumarravi@gmail.com)
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ravikumar1002/)
 [![dev.to Link](https://img.shields.io/badge/dev.to-0A0A0A?styleflat&logo=dev.to&logoColor=white)](https://dev.to/ravikumar1002)
-<p align="left"> <a href="https://twitter.com/kumarravi1002" target="blank"><img src="https://img.shields.io/twitter/follow/kumarravi1002?logo=twitter&style=for-the-badge" alt="kumarravi1002" /></a> </p>
+ <a href="https://twitter.com/kumarravi1002" target="blank"><img src="https://img.shields.io/twitter/follow/kumarravi1002?logo=twitter&style=for-the-badge" alt="kumarravi1002" /></a>
 
  ## Tools / Languages:
 
