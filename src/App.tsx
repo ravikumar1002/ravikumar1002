@@ -9,6 +9,7 @@ import LandingPage from "@components/LandingPage";
 import Header from "@components/Header";
 import LeftSidebar from "@components/LeftSidebar";
 import RightSidebar from "@components/RightSidebar";
+import { useLayoutEffect } from "react";
 
 const useStyles = makeSxStyles((theme: Theme) => ({
   pageContainer: {
@@ -25,6 +26,16 @@ const useStyles = makeSxStyles((theme: Theme) => ({
 const App = () => {
   const theme = useTheme();
   const classes = useStyles(theme);
+
+  useLayoutEffect(() => {
+    const {pathname} = window.location
+    console.log('dd', pathname);
+    
+    if(pathname.includes('/resume')){
+      window.location.replace('https://drive.google.com/file/d/1DnayIj657mxU8oEES4U8EfT8kgcS7S1F/view?usp=sharing')
+    }
+  }, []);
+
   return (
     <div className="App">
       <Box>
