@@ -17,7 +17,7 @@ const useStyles = makeSxStyles((theme: Theme) => ({
     "&:after": {
       content: "''",
       position: "absolute",
-      width: "40%",
+      width: "60%",
       height: 0.1,
       backgroundColor: "#8892b0",
       top: "50%",
@@ -73,7 +73,7 @@ const Work = () => {
   return (
     <Box sx={classes.workPageContainer} id="work-section">
       <Typography variant="h5" sx={classes.sectionHeading}>
-        Work
+        Projects
       </Typography>
       <Grid
         container

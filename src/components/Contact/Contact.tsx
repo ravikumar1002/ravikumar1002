@@ -12,34 +12,40 @@ import { ReactComponent as Dev } from "@resources/svg/dev-logo.svg";
 import { ReactComponent as Github } from "@resources/svg/github-logo.svg";
 import { ReactComponent as Twitter } from "@resources/svg/twitter-logo.svg";
 import { ReactComponent as Linkedin } from "@resources/svg/linkedin-logo.svg";
+import { ReactComponent as Email } from "@resources/svg/email-logo.svg";
+
 
 import makeSxStyles from "@hooks/makeSxStyles";
 
 const socialLinks = [
   {
     name: "Dev",
-    Icon: () => <Dev/>,
+    Icon: () => <Dev />,
     link: "https://dev.to/ravikumar1002",
   },
   {
     name: "Twitter",
-    Icon: () => <Twitter/>,
+    Icon: () => <Twitter />,
     link: "https://twitter.com/kumarravi1002",
   },
   {
     name: "Linkedin",
-    Icon: () => <Linkedin/>,
+    Icon: () => <Linkedin />,
     link: "https://www.linkedin.com/in/ravikumar1002/",
   },
   {
     name: "Github",
-    Icon: () => <Github/>,
+    Icon: () => <Github />,
     link: "https://github.com/ravikumar1002",
+  },
+  {
+    name: "Email",
+    Icon: () => <Email/>,
+    link: "mailto:1002kumarravi@gmail.com",
   },
 ];
 const useStyles = makeSxStyles((theme: Theme) => ({
   contactContaine: {
-    minHeight: "100vh",
     padding: theme.spacing(2, 0),
     paddingTop: "71px",
   },
@@ -90,26 +96,6 @@ const Contact = () => {
   const classes = useStyles(theme);
   return (
     <Box sx={classes.contactContaine} id="contact-section">
-      <Typography sx={classes.sectionHeading} variant="h5">
-        Contact
-      </Typography>
-      <Box p={3}>
-        <Typography align="center">
-          If you&apos;ve found anything intersing here or just wana have some
-          technical chitchat, feel free to drop a mail. <br />
-          I&apos;ll try my best to answer.
-        </Typography>
-        <Button
-          component="a"
-          href="mailto:1002kumarravi@gmail.com"
-          variant="outlined"
-          size="large"
-          color="secondary"
-          sx={classes.helloButton}
-        >
-          Say Hello
-        </Button>
-      </Box>
       <Divider sx={{ margin: "32px auto", width: "80%" }} />
       <Box p={3}>
         <Typography align="center">
