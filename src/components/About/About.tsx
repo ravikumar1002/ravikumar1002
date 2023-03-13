@@ -71,60 +71,10 @@ const techs = [
 ];
 
 const useStyles = makeSxStyles((theme: Theme) => ({
-  aboutPageContainer: {
-    height: "100vh",
-    padding: theme.spacing(2, 0),
-    paddingTop: "71px",
-  },
-  sectionHeading: {
-    position: "relative",
-    marginBottom: theme.spacing(2),
-    color: theme.palette.common.white,
-    "&:after": {
-      content: "''",
-      position: "absolute",
-      width: "40%",
-      height: 0.1,
-      backgroundColor: "#8892b0",
-      top: "50%",
-      left: 150,
-    },
-  },
   aboutText: {
     lineHeight: 1.3,
     letterSpacing: 0.3,
     wordSpacing: 0.6,
-  },
-  contentContainer: {
-    display: "flex",
-    alignItems: "center",
-    flexDirection: "row",
-    gap: theme.spacing(5),
-    paddingTop: {
-      xs: theme.spacing(2),
-      sm: theme.spacing(4),
-    },
-    height: {
-      xs: "60%",
-    },
-    "&> div:first-child": {
-      width: {
-        xs: "100%",
-        sm: "80%",
-        lg: "70%",
-        md: "60%",
-      },
-    },
-    "&> div:last-child": {
-      display: {
-        xs: "none",
-        md: "inherit",
-      },
-      width: "40%",
-    },
-  },
-  animContainer: {
-    height: " 30vh",
   },
   jsWordStyle: {
     position: "relative",
@@ -158,59 +108,51 @@ const About = () => {
   const theme = useTheme();
   const classes = useStyles(theme);
   return (
-    <Box sx={classes.aboutPageContainer} id="about-section">
-      <Typography variant="h5" sx={classes.sectionHeading}>
-        About me
-      </Typography>
-      <Box sx={classes.contentContainer}>
-        <Box
-          sx={{
-            lineHeight: 1.5,
-          }}
+      <Box
+        sx={{
+          lineHeight: 1.5,
+          marginTop: "2rem",
+        }}
+      >
+        <Typography component={"div"} sx={classes.aboutText}>
+          I&apos;m a frontend web developer who enjoys
+          building things that live on the internet.
+        </Typography>
+        <Typography
+          component={"div"}
+          style={{ marginTop: 8 }}
+          sx={classes.aboutText}
         >
-          <Typography component={"div"} sx={classes.aboutText}>
-            Hello! I&apos;m Ravi Kumar, a frontend web developer who enjoys
-            building things that live on the internet.
-          </Typography>
-          <Typography
-            component={"div"}
-            style={{ marginTop: 8 }}
-            sx={classes.aboutText}
-          >
-            I love working with{" "}
-            <Typography component={"span"} sx={classes.jsWordStyle}>
-              Javascript
-            </Typography>{" "}
-            and web technologies. I majorly work with{" "}
-            <Typography component={"span"} sx={classes.reactWordStyle}>
-              React
-            </Typography>{" "}
-            and frontend tools and technologies.
-          </Typography>
-          <Typography
-            component={"div"}
-            style={{ marginTop: 8 }}
-            sx={classes.aboutText}
-          >
-            Besides this, I strictly prefer writing well-documented readable
-            code.
-          </Typography>
-          <Typography
-            component={"div"}
-            style={{ marginTop: 32 }}
-            sx={classes.aboutText}
-          >
-            Technologies I work with:
-          </Typography>
-          <Box sx={classes.logosContainer}>
-            {techs.map((item, index) => (
-              <item.Icon key={item.name} title= {item.name} />
-            ))}
-          </Box>
+          I love working with{" "}
+          <Typography component={"span"} sx={classes.jsWordStyle}>
+            Javascript
+          </Typography>{" "}
+          and web technologies. I majorly work with{" "}
+          <Typography component={"span"} sx={classes.reactWordStyle}>
+            React
+          </Typography>{" "}
+          and frontend tools and technologies.
+        </Typography>
+        <Typography
+          component={"div"}
+          style={{ marginTop: 8 }}
+          sx={classes.aboutText}
+        >
+          Besides this, I strictly prefer writing well-documented readable code.
+        </Typography>
+        <Typography
+          component={"div"}
+          style={{ marginTop: 32 }}
+          sx={classes.aboutText}
+        >
+          Technologies I work with:
+        </Typography>
+        <Box sx={classes.logosContainer}>
+          {techs.map((item, index) => (
+            <item.Icon key={item.name} title={item.name} />
+          ))}
         </Box>
-        <Box sx={classes.animContainer}> </Box>
       </Box>
-    </Box>
   );
 };
 

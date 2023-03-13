@@ -4,135 +4,17 @@
   box-sizing: border-box;
 }
 
-#root {
-  display: none;
-}
 
 body {
   scroll-behavior: smooth;
 }
 
 ::-moz-selection {
-  background: #79ffe1;
-  color: #003049;
+  background: #ffffff;
+  color: #404040;
 }
+
 ::selection {
-  background: #79ffe1;
-  color: #003049;
-}
-
-.icon {
-  width: 30px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.loader {
-  width: 100vw;
-  height: 100vh;
-  max-height: 100vh;
-  max-width: 100vw;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #003049;
-}
-
-.icon1 {
-  fill: rgba(26, 237, 96, 0.38);
-  transform: translate(-50%, -50%);
-  animation: icon1 0.8s, icon1Rotate 1s infinite;
-}
-
-.icon2 {
-  fill: rgba(77, 227, 107, 0.62);
-  transform: translate(0%, -75%);
-  animation: icon2 0.8s, icon2Rotate 1s infinite;
-}
-
-.icon3 {
-  fill: rgba(50, 237, 184, 0.53);
-  transform: translate(0%, -25%);
-  animation: icon3 0.8s, icon3Rotate 1s infinite;
-}
-
-@keyframes icon1 {
-  from {
-    left: 4%;
-    top: 50%;
-  }
-
-  to {
-    left: 50%;
-    top: 50%;
-  }
-}
-
-@keyframes icon1Rotate {
-  0% {
-    transform: translate(-50%, -50%) rotate(0);
-  }
-
-  50% {
-    transform: translate(-50%, -50%) rotate(0);
-  }
-
-  100% {
-    transform: translate(-50%, -50%) rotate(120deg);
-  }
-}
-
-@keyframes icon2Rotate {
-  0% {
-    transform: translate(0%, -75%) rotate(0);
-  }
-
-  50% {
-    transform: translate(0%, -75%) rotate(0);
-  }
-
-  100% {
-    transform: translate(0%, -75%) rotate(120deg);
-  }
-}
-
-@keyframes icon3Rotate {
-  0% {
-    transform: translate(0%, -25%) rotate(0);
-  }
-
-  50% {
-    transform: translate(0%, -25%) rotate(0);
-  }
-
-  100% {
-    transform: translate(0%, -25%) rotate(120deg);
-  }
-}
-
-@keyframes icon2 {
-  from {
-    top: 4%;
-    left: 96%;
-  }
-
-  to {
-    top: 50%;
-    left: 50%;
-  }
-}
-
-@keyframes icon3 {
-  from {
-    top: 96%;
-    left: 96%;
-  }
-
-  to {
-    top: 50%;
-    left: 50%;
-  }
+  background: #3c3852;
+  color: #ffffff;
 }

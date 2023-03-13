@@ -10,14 +10,14 @@ const theme: ThemeOptions = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#003049",
-      dark: "#222"
+      main: "#212121",
+      dark: "#fff"
     },
     secondary: {
-      main: "#64ffda"
+      main: "#212121"
     },
     background: {
-      paper: "#0A192F"
+      paper: "#1e1d1d"
     }
   },
   components: {
