@@ -21,7 +21,9 @@ I'm a passionate learner who's always willing to learn, explore and work across 
 These are the tools and languages that I have worked with and have experience about using them :
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="JavaScript"><img src="https://github.com/get-icon/geticon/raw/master/icons/javascript.svg" alt="JavaScript" width="48px" height="48px"></a>  &nbsp;  &nbsp; 
-<a href="https://reactjs.org/" title="React"><img src="https://github.com/get-icon/geticon/raw/master/icons/react.svg" alt="React" width="48px" height="48px"></a>   &nbsp;  &nbsp;
+<a href="https://reactjs.org/" title="ReactJS"><img src="https://github.com/get-icon/geticon/raw/master/icons/react.svg" alt="React" width="48px" height="48px"></a>   &nbsp;  &nbsp;
+<a href="https://nextjs.org/" title="NextJS"><img src="https://raw.githubusercontent.com/gilbarbara/logos/c8749cfc4be0e67a266be0554282d73d967db910/logos/nextjs-icon.svg" alt="NextJS" width="48px" height="48px"></a>  &nbsp;  &nbsp; 
+<a href="https://www.typescriptlang.org/" title="Typescript"><img src="https://github.com/get-icon/geticon/raw/master/icons/typescript-icon.svg" alt="Typescript" width="48px" height="48px"></a>  &nbsp;  &nbsp;
 <a href="https://www.w3.org/TR/html5/" title="HTML5"><img src="https://github.com/get-icon/geticon/raw/master/icons/html-5.svg" alt="HTML5" width="48px" height="48px"></a>   &nbsp;  &nbsp;
 <a href="https://www.w3.org/TR/CSS/" title="CSS3"><img src="https://github.com/get-icon/geticon/raw/master/icons/css-3.svg" alt="CSS3" width="48px" height="48px"></a>   &nbsp;  &nbsp;
 <a href="https://redux.js.org/" title="Redux"><img src="https://github.com/get-icon/geticon/raw/master/icons/redux.svg" alt="Redux" width="48px" height="48px"></a>   &nbsp;  &nbsp;
@@ -30,9 +32,8 @@ These are the tools and languages that I have worked with and have experience ab
 <a href="https://getbootstrap.com/" title="Bootstrap"><img src="https://github.com/get-icon/geticon/raw/master/icons/bootstrap.svg" alt="Bootstrap" width="48px" height="48px"></a>  &nbsp;  &nbsp;
 <a href="https://material-ui.com/" title="Material UI"><img src="https://github.com/get-icon/geticon/raw/master/icons/material-ui.svg" alt="Material UI" width="48px" height="48px"></a>  &nbsp;  &nbsp;
 
-<a href="https://www.typescriptlang.org/" title="Typescript"><img src="https://github.com/get-icon/geticon/raw/master/icons/typescript-icon.svg" alt="Typescript" width="48px" height="48px"></a>  &nbsp;  &nbsp;
-<a href="https://www.firebase.com/" title="Firebase"><img src="https://github.com/get-icon/geticon/raw/master/icons/firebase.svg" alt="Firebase" width="48px" height="48px"></a>
-
+<a href="https://tailwindcss.com/" title=" Taileind CSS"><img src="https://raw.githubusercontent.com/gilbarbara/logos/c8749cfc4be0e67a266be0554282d73d967db910/logos/tailwindcss-icon.svg" alt="Tailwind CSS" width="48px" height="48px"></a>  &nbsp;  &nbsp;
+<a href="https://www.firebase.com/" title="Firebase"><img src="https://github.com/get-icon/geticon/raw/master/icons/firebase.svg" alt="Firebase" width="48px" height="48px"></a>   &nbsp;  &nbsp;
 
 ## Github Stats 📃:
 
