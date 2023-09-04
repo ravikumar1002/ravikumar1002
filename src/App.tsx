@@ -29,7 +29,7 @@ const App = () => {
     const {pathname} = window.location
     
     if(pathname.includes('/resume')){
-      window.location.replace('https://drive.google.com/file/d/1NDJ4SAQ7Ce7ImHDIZrs_Iw2bZLOMJ1yU/view?usp=sharing')
+      window.location.replace('https://drive.google.com/file/d/16i1eQ7G91utZb2Z9i6nR5EPnU14HzW0J/view?usp=sharing')
     }
   }, []);
 
