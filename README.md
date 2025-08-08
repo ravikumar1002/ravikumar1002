@@ -38,7 +38,6 @@ These are the tools and languages that I have worked with and have experience ab
 
 <p align="center">
     <img align="left"  src="https://github-readme-stats.vercel.app/api/top-langs?username=ravikumar1002&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="ravikumar1002" /></p>
-    <p>&nbsp;<img align="center"  height="165"  src="https://github-readme-stats.vercel.app/api?username=ravikumar1002&show_icons=true&locale=en&theme=tokyonight" alt="ravikumar1002" /></p>
 </p>
 
 <p><img align="center" height="165"    src="https://github-readme-streak-stats.herokuapp.com/?user=ravikumar1002&&theme=tokyonight" alt="ravikumar1002" /></p>
